@@ -1,0 +1,6 @@
+hr {
+	@extend %margin-bottom;
+	border: none;
+	border-bottom: solid 1px $hr;
+	clear: both;
+}

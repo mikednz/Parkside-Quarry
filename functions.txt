@@ -1,0 +1,61 @@
+////////////////
+
+Grab random all testimonials (i think 2)
+
+plankton_random_testimonails();
+
+////////////////
+
+////////////////
+
+Grab all testimonials
+
+plankton_all_testimonails();
+
+////////////////
+
+////////////////
+
+Out twitter feed widget, make sure you enable library/sidebars.php in functions
+
+dynamic_sidebar( 'twitter' ); 
+
+Consumer key YN8Fr20vC3yBileWFUUg
+consumer secret EKKYZE4D6Q56Em50V51Yd2JH9l4CcRZIeYTjFx4zB3g
+Access token 124587852-nAWjBfnQ6zGjIG588Ao6DTHPwXP02ekUmW9wAA6v
+Access token secret dVtvWY2Kai8IzBGCj0YCQDB6zGYX2JJO0Ui9nCYU5s
+
+////////////////
+
+////////////////
+
+Gravity forms license
+
+755397a0fd1df48110a7be5810927d19
+
+////////////////
+
+////////////////
+
+Recaptcha
+
+PK:  6Lfs-e0SAAAAAFLA8oy1Cop1JGqa4vba1xVkkvYe
+PrivK:  6Lfs-e0SAAAAAFJCheZ05-HBjQkxmU8JCOu0N_U2
+
+
+////////////////
+
+ACF
+
+b3JkZXJfaWQ9MzQ2NzR8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTE0IDAzOjU3OjI0
+
+////////////////
+
+////////////////
+
+Ackismit
+
+8b76e604168b
+
+////////////////
+

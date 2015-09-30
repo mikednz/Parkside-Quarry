@@ -1,0 +1,30 @@
+$header-background: $charcoal;
+$header-color: white;
+
+$header-padding-top: 0.2em;
+
+.header--absolute {
+
+	@include bp(full-nav) {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+		padding-bottom: 40px;
+	}
+}
+
+header {
+	background: $header-background;
+	float: left;
+	width: 100%;
+	padding-top: $header-padding-top;
+	color: $header-color;
+	min-height: 6em;
+
+	@include bp(full-nav) {
+		background: transparent;
+		padding-top: 0;
+	}
+}

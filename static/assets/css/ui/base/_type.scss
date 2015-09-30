@@ -1,0 +1,19 @@
+b, strong {
+	font-family: $bold;
+	font-weight: normal;
+}
+
+.highlight {
+	color: $highlight !important;
+	fill: $highlight !important;
+}
+
+.charcoal {
+	color: $charcoal !important;
+	fill: $charcoal !important;
+}
+
+.small {
+	@include font-size(12px);
+	line-height: 1.4;
+}

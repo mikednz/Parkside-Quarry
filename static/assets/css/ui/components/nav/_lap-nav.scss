@@ -1,0 +1,96 @@
+@include bp(full-nav) {
+
+   .nav {
+        /* set these to override the mobile nav */
+        right: $spacing-unit !important;
+        //margin-right:-550px;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 0 !important;
+        top: 79px;
+        position: absolute;
+        width: 700px;
+        @include vendor(transform, none !important);
+        @include vendor(translate, none !important);
+        padding: 0;
+        background: none;
+        text-align: right;
+        overflow: visible;
+        height: auto;
+        z-index: 99;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+            width: auto;
+            margin-left: 10px;
+            @include vendor(transition, 0.3s);
+
+            &:after {
+                content: "|";
+                position: absolute;
+                top: 0;
+                left: -8px;
+                color: white;
+            }
+
+            &:first-of-type {
+                &:after {
+                    display: none;
+                }
+            }
+
+            a {
+                padding: 0;
+            }
+
+
+        }
+
+        p {
+            position: absolute;
+            top:-58px;
+            right: 0;
+            display: block;
+            font-family: $bold;
+
+            a {
+                margin-top: -4px;
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+
+}
+
+@include bp(small-desk) {
+
+   .nav li {
+      margin-left: 24px;
+
+      &:after {
+          left: -16px;
+
+      }
+   }
+}
+
+@include bp(desk) {
+
+    .nav {
+        width: 900px;
+        right: 50% !important;
+        margin-right: -540px;
+    }
+    .nav li {
+        //margin-right: 59px;
+    }
+
+}

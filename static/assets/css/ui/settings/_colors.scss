@@ -1,0 +1,57 @@
+$green: #55b758;
+
+$brown: #A29A7B;
+$light-brown: #C4BA9B;
+
+$charcoal: #373334;
+
+$grey: #57585B;
+
+$light-grey: #7A7A7A;
+
+$off-white: #f7f8f8;
+
+
+
+// BASE VARIABLES
+
+$base-text-color:   $charcoal;
+$base-background-color:	white;
+
+
+// USEFUL VARIABLES
+
+$highlight: $brown;
+
+$highlight--mute: $light-brown;
+
+$base-color: $base-text-color;
+
+$base-color--mute: $light-brown;
+
+// LINKS
+
+$color-links--attention: $highlight--mute;
+
+$content-color-links: $highlight;
+
+$color-links-secret--attention: $highlight;
+
+// HEADINGS
+
+$heading-color: $highlight;
+
+
+// BORDERS & LINES
+
+$hr: $brown;
+
+
+// FORM ELEMENTS
+
+$placeholder: #aaa;
+
+// GRADIENTS
+
+$ellipse-gradiant-outer: null;
+$ellipse-gradiant-inner: null;

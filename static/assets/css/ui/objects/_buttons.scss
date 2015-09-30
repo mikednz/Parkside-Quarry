@@ -1,0 +1,80 @@
+// Button Borders
+$btn-radius: $radius;
+$btn-border-width: 2px;
+$btn-border-style: solid;
+$btn-border-color: $highlight;
+
+// Button Padding
+$btn-padding: 6px;
+$btn-vertical-padding: $btn-padding - $btn-border-width;
+$btn-horizontal-padding: double($btn-padding) - $btn-border-width;
+
+@mixin button {
+	display: inline-block; /* [1] */
+    vertical-align: middle; /* [2] */
+    text-align: center; /* [4] */
+    border: none; /* [4] */
+    margin:  0; /* [4] */
+    cursor: pointer; /* [5] */
+    overflow: visible; /* [6] */
+    padding: $btn-vertical-padding $btn-horizontal-padding !important; /* [7] */
+    background-color: transparent;
+	font-family: $semi-bold;
+	text-transform: uppercase;
+
+    @if($btn-border-width != 0) {
+        border: $btn-border-width $btn-border-style $btn-border-color;
+    }
+
+    @if($btn-radius != 0) {
+        border-radius: $btn-radius;
+    }
+
+
+	margin-bottom: $spacing-unit !important;
+	@include vendor(transition, 0.3s);
+	@include font-size(17px);
+	color: $highlight;
+	position: relative;
+	margin-right: $spacing-unit/2;
+	max-width: 330px;
+
+	@include attention {
+		text-decoration: none;
+		background-color: $highlight;
+		border-color: $highlight;
+		color: white;
+	}
+}
+
+.button {
+	@include button;
+}
+
+	/* color modifiers */
+
+	.button--white {
+		@include button;
+		background-color: transparent !important;
+		border-color: white !important;
+		color: white;
+
+		@include attention {
+			background-color: white !important;
+			border-color: white !important;
+			color: $highlight;
+		}
+	}
+
+	.button--charcoal {
+		@include button;
+		background-color: $charcoal !important;
+		border-color: $charcoal !important;
+		color: white;
+
+		@include attention {
+			background-color: black !important;
+			border-color: black !important;
+			color: white;
+		}
+	}
