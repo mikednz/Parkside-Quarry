@@ -17,3 +17,11 @@
          @include hide();
     }
 }
+
+.hide-tablet-and-down {
+    display: none;
+
+    @include bp(portable) {
+        display: block;
+    }
+}

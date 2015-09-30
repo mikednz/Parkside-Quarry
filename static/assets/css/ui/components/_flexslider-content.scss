@@ -1,0 +1,19 @@
+.slides_content {
+
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+
+    .alpha {
+        color: white;
+    }
+
+    @include bp(full-nav) {
+        top: 9em;
+    }
+
+    @include bp(small-desk) {
+        top: 13em;
+    }
+}

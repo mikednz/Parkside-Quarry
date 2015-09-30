@@ -23,7 +23,20 @@
 #main {
 	float: left;
 	width: 100%;
+	z-index: 9;
+	position: relative;
 }
+
+	.main--overlaid {
+
+		@include bp(two-hands) {
+			margin-top: -7em;
+		}
+
+		@include bp(full-nav) {
+			section {margin-top: 7em;}
+		}
+	}
 
 .site-wrap {
   /* Critical position and size styles */
@@ -47,5 +60,21 @@
   transition: all 0.7s;
   height: 100%;
   z-index: -1;
+
+}
+
+.inline-elements {
+	text-align: center;
+
+	h2,p,a {
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0 !important;
+	}
+
+	h2, p {
+		margin-right: 10px;
+	}
+
 
 }

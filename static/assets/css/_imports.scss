@@ -34,7 +34,7 @@
 @import "ui/base/type";
 @import "ui/base/links";
 @import "ui/base/images";
-//@import "ui/base/backgrounds";
+@import "ui/base/backgrounds";
 @import "ui/base/misc-elements";
 @import "ui/base/forms";
 @import "ui/base/lists";
@@ -66,6 +66,7 @@
 @import "ui/components/columns";
 @import "ui/components/fancybox";
 @import "ui/components/flexslider";
+@import "ui/components/flexslider-content";
 
 //@import "ui/components/vertical-menu";
 //@import "ui/components/zebra-list";

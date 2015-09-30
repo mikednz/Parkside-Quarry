@@ -4,6 +4,10 @@ h1,
     @include font-size($heading-size-1);
     font-family: $bold;
     color: $highlight;
+
+    @include bp(max-mobile) {
+        @include font-size(19px);
+    }
 }
 
 h2,
@@ -14,6 +18,9 @@ h2,
     line-height: 1.6;
     color: $highlight;
 
+    @include bp(max-mobile) {
+        @include font-size(17px);
+    }
 }
 
 h3,
@@ -21,7 +28,9 @@ h3,
 %gamma {
     @include font-size($heading-size-3);
 
-
+    @include bp(max-mobile) {
+        @include font-size(15px);
+    }
 }
 
 h4,

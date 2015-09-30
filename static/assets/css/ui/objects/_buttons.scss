@@ -45,6 +45,10 @@ $btn-horizontal-padding: double($btn-padding) - $btn-border-width;
 		border-color: $highlight;
 		color: white;
 	}
+
+	@include bp(max-mobile) {
+		@include font-size(14px);
+	}
 }
 
 .button {
@@ -63,6 +67,19 @@ $btn-horizontal-padding: double($btn-padding) - $btn-border-width;
 			background-color: white !important;
 			border-color: white !important;
 			color: $highlight;
+		}
+	}
+
+	.button--brown {
+		@include button;
+		background-color: $brown !important;
+		border-color: $brown !important;
+		color: white;
+
+		@include attention {
+			background-color: $charcoal !important;
+			border-color: $charcoal !important;
+			color: white;
 		}
 	}
 
