@@ -46,21 +46,6 @@ ul, ol {
 
 /////////////////////
 
-.has-dropdown {
-	position: relative;
-}
-
-.dropdown-menu {
-	position: absolute;
-	top: $spacing-unit;
-	right: 0;
-	background: white;
-	@include vendor(box-shadow, 0 0 2px rgba(0,0,0,0.4));
-	
-}
-
-/////////////////////
-
 @mixin stack-list {
 	display: block;
   	margin-bottom: 0;

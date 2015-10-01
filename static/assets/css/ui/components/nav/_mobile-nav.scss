@@ -5,10 +5,12 @@
     $nav-text-align: left;
 }
 
+$sub-nav: true;
+
 /* Navigation Menu - Background */
 .nav {
   /* critical sizing and position styles */
-  width: 100%;
+  width: 220px; // needs to be tweaked to suit the push distance
   height: 100%;
   position: fixed;
   top: 0;
@@ -34,12 +36,16 @@
     text-align: $nav-text-align;
     text-transform: uppercase;
 
-    ul {
-        margin: 0;
+    @if $sub-nav == true {
 
-        li a {
-            padding-left: $spacing-unit*1.5;
-          }
+        position: relative;
+
+        ul {
+            margin: 0; padding: 0;
+            position: relative;
+             #{$nav-text-align}: 0;
+            
+        }
     }
 
     &.active > a {

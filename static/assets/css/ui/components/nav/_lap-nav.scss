@@ -31,11 +31,64 @@
             margin-left: 10px;
             @include vendor(transition, 0.3s);
 
+            // if sub nav
+
+            @if $sub-nav == true {
+
+                &.menu-item-has-children { padding-bottom: 1em; }
+                position: relative;
+
+                &:hover ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                ul {
+                    margin: 0; padding: $spacing-unit/2;
+                    background: $charcoal;
+                    position: absolute;
+                     #{$nav-text-align}: 0;
+                    top: 2em;
+                    left: 0;
+                    min-width:300px;
+                    visibility: hidden;
+                    z-index: 1;
+                    opacity: 0;
+                    @include vendor(transition, all .25s ease);
+
+                    li {
+                        text-align: left;
+                        margin: 0;
+                        float: left;
+                        width: 100%;
+                        margin-bottom: 0.7em;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+
+                    }
+
+                    a {
+                        @include attention() {
+                            color: $highlight;
+                        }
+                    }
+
+                }
+            }
+
+            // end if sub nav
+
             &:after {
                 content: "|";
                 position: absolute;
                 top: 0;
-                left: -8px;
+                left: -9px;
                 color: white;
             }
 
@@ -48,7 +101,6 @@
             a {
                 padding: 0;
             }
-
 
         }
 
@@ -66,8 +118,6 @@
         }
 
     }
-
-
 }
 
 @include bp(small-desk) {
